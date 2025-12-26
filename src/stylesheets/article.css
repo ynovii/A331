@@ -1,0 +1,798 @@
+body {
+  margin: 0;
+  font-family: "Fors Trial";
+  background-color: #ffffff;
+}
+
+.article_header {
+  min-height: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-family: "Fors Trial";
+  background-image: url(../images/bg_header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.article_header__container {
+  width: 1520px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.article_header__text {
+  margin-top: 150px;
+  margin-bottom: 5%;
+  max-width: 700px;
+  color: white;
+  font-family: "Fors Trial Rg";
+}
+
+.article_header__title h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  margin-top: 0;
+  color: white;
+  font-family: "TT Neoris Trial";
+}
+
+.article_header__description p {
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1.4;
+  font-family: "Fors Trial Rg";
+  color: white;
+  margin: 0;
+}
+
+.article_header__menu {
+  background-image: url(../images/bg_menu.png);
+  max-width: 1520px;
+  height: 80px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Fors Trial Rg";
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px 0 60px;
+  margin: 0 auto;
+  position: fixed;
+  top: 53px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.article_header__nav a {
+  color: #252219;
+  text-decoration: none;
+  margin: 32px;
+  text-underline-offset: 4px;
+}
+
+.article_header__nav a:hover {
+  text-decoration: underline;
+}
+
+.article_content {
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  position: relative;
+  margin-top: -5%;
+  padding-bottom: 50px;
+  padding-top: 5%;
+  z-index: 10;
+}
+
+.article_content__container {
+  justify-content: center;
+  display: flex;
+  min-width: 1520px;
+}
+
+.article_content__logo {
+  width: 120px;
+  height: 110px;
+}
+
+.article_content__text {
+  max-width: 947px;
+}
+
+.article_content__title {
+  font-size: 48px;
+  color: #252219;
+  font-weight: 700;
+  font-family: "TT Neoris Trial";
+}
+
+.article_content__description {
+  padding-top: 3%;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.4;
+  max-width: 947px;
+  padding-right: 6%;
+  font-family: "Fors Trial Rg";
+}
+
+.article_content__characteristics {
+  display: flex;
+  gap: 45px;
+}
+
+.article_content__characteristic {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.article_characteristics__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.article_cost__ikon {
+  width: 53px;
+  height: 53px;
+}
+
+.article_contant__images {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  margin: 5%;
+}
+
+.article_contant__image {
+  position: relative;
+  width: 626px;
+  height: 445px;
+  border-radius: 30px;
+}
+
+.article_contant__bg1 {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-image: url(../images/bg1__conten.png);
+}
+
+.article_contant__up1 {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/up.png);
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.article_contant__up1:hover {
+  opacity: 0;
+}
+
+.article_contant__bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  background-image: url(../images/bg2.png);
+}
+
+.article_contant__up2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.4s ease;
+  background-image: url(../images/up2.png);
+}
+
+.article_contant__up2:hover {
+  opacity: 0;
+}
+
+.article_contant__bg3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  background-image: url(../images/bg3.png);
+}
+
+.article_contant__up3 {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/up3.png);
+}
+
+.article_contant__up3:hover {
+  opacity: 0;
+}
+
+.article_contant__bg4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  background-image: url(../images/bg4.png);
+}
+
+.article_contant__up4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  background-image: url(../images/up4.png);
+}
+
+.article_contant__up4:hover {
+  opacity: 0;
+}
+
+.article_contant__bg5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  background-image: url(../images/bg5.png);
+}
+
+.article_contant__up5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  background-image: url(../images/up5.png);
+}
+
+.article_contant__up5:hover {
+  opacity: 0;
+}
+
+.article_contant__bg6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  background-image: url(../images/bg6.png);
+}
+
+.article_contant__up6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  background-image: url(../images/up6.png);
+}
+
+.article_contant__up6:hover {
+  opacity: 0;
+}
+
+.article_contant__bg7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  background-image: url(../images/bg7.png);
+}
+
+.article_contant__up7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  background-image: url(../images/up7.png);
+}
+
+.article_contant__up7:hover {
+  opacity: 0;
+}
+
+.article_contant__bg8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  background-image: url(../images/bg8.png);
+}
+
+.article_contant__up8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  background-image: url(../images/up8.png);
+}
+
+.article_contant__up8:hover {
+  opacity: 0;
+}
+
+.article_cost__title {
+  font-weight: 700;
+  padding-bottom: 4%;
+  font-size: 24px;
+}
+
+.article_cost__description {
+  font-size: 24px;
+  font-weight: 300;
+  padding-bottom: 4%;
+  font-family: "Fors Trial Rg";
+}
+
+.article_mobile-nav-container {
+  display: none;
+}
+
+.article_footer {
+  display: flex;
+  background-color: #B3431D;
+  min-height: 280px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.article_footer__container {
+  width: 100%;
+  max-width: 1520px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.article_footer__logo_hse img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article_footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "TT Fors Trial", sans-serif;
+  color: white;
+  align-items: center;
+  gap: 20px;
+}
+
+.article_footer__contacts a {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .article_header {
+    min-height: auto;
+    height: 800px;
+    background-size: cover;
+    align-items: flex-start;
+    padding-top: 150px;
+  }
+  .article_header__container {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .article_header__menu {
+    width: 90%;
+    max-width: 960px;
+    top: 30px;
+    padding-right: 30px;
+  }
+  .article_mobile-nav-container {
+    display: none;
+  }
+  .article_header__title h1 {
+    font-family: "Fors Trial";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+  }
+  .article_content {
+    margin-top: -50px;
+  }
+  .article_content__container {
+    min-width: 0;
+    width: 100%;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .article_content__title {
+    font-size: 36px;
+  }
+  .article_content__description {
+    font-size: 18px;
+    padding-right: 0;
+  }
+  .article_content__characteristic {
+    width: 35%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .article_content__characteristics {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    border: none;
+    padding: 0;
+  }
+  .article_cost__ikon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+  .article_cost__ikon img {
+    width: 100%;
+    height: 100%;
+  }
+  .article_characteristics__text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .article_cost__title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    font-family: "TT Neoris Trial";
+  }
+  .article_cost__description {
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 0;
+  }
+  .article_contant__images {
+    padding: 0 40px;
+    margin: 40px 0;
+    gap: 20px;
+  }
+  .article_contant__image {
+    width: 50%;
+    height: 320px;
+  }
+  .article_footer {
+    min-height: 200px;
+  }
+  .article_footer__container {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  body, html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .article_header {
+    background-image: url(../images/article_bg-mobile.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 650px;
+    height: auto;
+    align-items: center;
+    padding-bottom: 60px;
+    padding-top: 0;
+  }
+  .article_header__container {
+    width: 100%;
+    min-width: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+  .article_header__text {
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+  .article_header__menu {
+    display: none;
+  }
+  .article_mobile-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+    z-index: 100;
+  }
+  .article_mobile-logo svg {
+    width: 60px;
+    height: 60px;
+  }
+  .article_mobile-burger {
+    width: 56px;
+    height: 56px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  .article_burger-lines {
+    width: 22px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .article_burger-lines span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 2px;
+  }
+  .article_header__title h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
+    font-family: "TT Neoris Trial";
+  }
+  .article_header__description p {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0;
+  }
+  .article_content {
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin-top: -50px;
+  }
+  .article_content__container {
+    flex-direction: column;
+    min-width: 0;
+    padding: 0 20px;
+    gap: 0;
+  }
+  .article_content__logo {
+    margin-bottom: 5px;
+    display: none;
+  }
+  .article_content__title {
+    font-family: "TT Neoris Trial";
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .article_content__description {
+    font-size: 16px;
+    padding-right: 0;
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  .article_content__characteristic {
+    width: 100%;
+    margin-top: 10px;
+    gap: 0;
+  }
+  .article_content__characteristics {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+    margin: 0;
+    gap: 0;
+  }
+  .article_cost__ikon {
+    display: none;
+  }
+  .article_contant__bg1, .article_contant__bg2, .article_contant__bg3, .article_contant__bg4,
+  .article_contant__bg5, .article_contant__bg6, .article_contant__bg7, .article_contant__bg8 {
+    display: none;
+  }
+  .article_contant__up1, .article_contant__up2, .article_contant__up3, .article_contant__up4,
+  .article_contant__up5, .article_contant__up6, .article_contant__up7, .article_contant__up8 {
+    background-size: cover;
+    opacity: 1 !important;
+  }
+  .article_contant__up1:hover, .article_contant__up2:hover, .article_contant__up3:hover, .article_contant__up4:hover,
+  .article_contant__up5:hover, .article_contant__up6:hover, .article_contant__up7:hover, .article_contant__up8:hover {
+    opacity: 1;
+  }
+  .article_characteristics__text {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .article_cost__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #252219;
+    margin-bottom: 0;
+    font-family: "TT Neoris Trial";
+  }
+  .article_cost__description {
+    font-size: 16px;
+    padding-bottom: 0;
+    text-align: right;
+    color: #1A1A1A;
+  }
+  .article_contant__images {
+    flex-direction: column;
+    margin: 30px 20px;
+    gap: 20px;
+  }
+  .article_contant__image {
+    width: 100%;
+    height: 140px;
+    border-radius: 20px;
+  }
+  .article_simple-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #FFFFFF;
+    width: 160px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    gap: 15px;
+    z-index: 101;
+  }
+  .article_simple-dropdown.show {
+    display: flex;
+  }
+  .article_simple-dropdown a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+  .article_simple-dropdown a:last-child {
+    border-bottom: none;
+  }
+  .article_footer {
+    height: auto;
+    padding: 40px 0;
+    margin-top: -1%;
+  }
+  .article_footer__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .article_footer__logo_hse {
+    margin-bottom: 10px;
+    max-width: 200px;
+  }
+  .article_footer__contacts {
+    justify-content: center;
+    width: 100%;
+  }
+  .footer__logo_hse {
+    max-width: 200px;
+  }
+  .footer__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=article.css.map */

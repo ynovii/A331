@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ростов-на-Дону</title>
+     <link type="image/x-icon" href="./images/favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="./images/favicon.ico" rel="icon">
+  </head>
+
+<body>
+    <div class="header">
+        
+        <div class="mobile-nav-container">
+            <div class="mobile-logo"> 
+                <img src="./images/logo.svg" alt="Logo">
+            </div>
+
+            <div class="menu-wrapper">
+                <button class="mobile-burger" onclick="toggleMenu()">
+                    <div class="burger-lines">
+                        <span></span><span></span><span></span>
+                    </div>
+                </button>
+
+                <div class="simple-dropdown" id="myDropdown">
+                    <a href="index.html">о проекте</a>
+                    <a href="article.html">статья</a>
+                    <a href="route.html">маршрут</a>
+                    
+                </div>
+            </div>
+        </div>
+   
+        <div class="header__menu">
+            <div class="header__logo">
+                <img src="./images/logo.svg" alt="Logo">
+            </div>
+            <div class="header__nav">
+                <a href="index.html">о проекте</a>
+                <a href="article.html">статья</a>
+                <a href="route.html">маршрут</a>
+               
+            </div>
+        </div>
+       
+        <div class="header__container">
+            <div class="header__text">
+                <div class="header__title">
+                    <h1>От Ростова-на-Дону до Песчаных Дюн</h1>
+                </div>
+                <div class="header__description">
+                    <p>Мы едем в уникальное место — Быковские Большие Буруны. 
+                    Маршрут проходит через всю Ростовскую область</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            
+            <div class="characteristics"></div>
+
+           
+                <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af368d7b78e9ee1eec4647dd8b91ffc3ff041fcc91a36f70e2486347091d56dc9&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script></div>
+           
+
+            <div class="legend">
+                <div class="legend-item">
+                    <img src="./images/Icon_green.svg" alt="icon">
+                    <span>Смотровые площадки</span>
+                </div>
+                <div class="legend-item">
+                    <img src="./images/Icon_orange.svg" alt="icon">
+                    <span>Заправки</span>
+                </div>
+                <div class="legend-item">
+                    <img src="./images/Icon_red.svg" alt="icon">
+                    <span>Локации</span>
+                </div>
+                <div class="legend-item">
+                    <img src="./images/Icon_grey.svg" alt="icon">
+                    <span>Музеи</span>
+                </div>
+            </div>
+
+            <div class="day-block">
+                <h2 class="day-title">День 1</h2>
+
+                <div class="card">
+                    <div class="card-left">
+                        <div class="image-box1"></div>
+                        <p class="coords">Координаты: 47.222531, 39.718705</p>
+                    </div>
+                    <div class="card-right">
+                        <div class="timeline-line"></div>
+                        <h3 class="card-title">Ростов-на-Дону.<br>Соборный переулок</h3>
+                        <p class="card-desc">
+                            Это одна из старейших и ключевых артерий в центре Ростова-на-Дону. 
+                            Пешеходная зона с множеством кафе и уютной атмосферой.
+                        </p>
+                        <div class="card-meta">
+                            <img src="./images/Icon_orange.svg" alt="icon"> Самое время заправиться!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-left">
+                        <div class="image-box2"></div>
+                        <p class="coords">Координаты: 47.234567, 39.876543</p>
+                    </div>
+                    <div class="card-right">
+                        <div class="timeline-line"></div>
+                        <h3 class="card-title">Старочеркасский<br>музей-заповедник</h3>
+                        <p class="card-desc">
+                            В 1970 году был основан историко-архитектурный музей-заповедник. 
+                            Здесь хранится дух казачества и уникальная архитектура.
+                        </p>
+                        <div class="card-meta">
+                            <img src="./images/Icon_grey.svg" alt="icon"> Музейная история
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-block">
+                <h2 class="day-title">День 2</h2>
+
+                <div class="card">
+                    <div class="card-left">
+                        <div class="image-box3"></div>
+                        <p class="coords">Координаты: 47.4140, 40.0930</p>
+                    </div>
+                    <div class="card-right">
+                        <div class="timeline-line"></div>
+                        <div class="card-meta meta-top">
+                            <img src="./images/Icon_orange.svg" alt="icon"> Самое время заправиться!
+                        </div>
+                        <h3 class="card-title">Главный храм донских казаков</h3>
+                        <p class="card-desc">
+                            Особо ценный памятник архитектуры. Собор поражает своим величием и высотой куполов.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-left">
+                        <div class="image-box4"></div>
+                        <p class="coords">Координаты: 47.7471446, 40.086919</p>
+                    </div>
+                    <div class="card-right">
+                        <div class="timeline-line"></div>
+                        <h3 class="card-title">Южный парк<br>птиц «Малинки»</h3>
+                        <p class="card-desc">
+                            Это удивительный мир пернатых и редких животных. В парке живет более 2500 питомцев.
+                        </p>
+                        <div class="card-meta">
+                            <img src="./images/Icon_green.svg" alt="icon"> Посетите смотровую площадку!
+                        </div>
+                        <div class="card-meta" style="margin-top: 10px;">
+                            <img src="./images/Icon_orange.svg" alt="icon"> Самое время заправиться!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-left">
+                        <div class="image-box5"></div>
+                        <p class="coords">Координаты: 48.3527136, 40.297651</p>
+                    </div>
+                    <div class="card-right">
+                        <div class="timeline-line"></div>
+                        <h3 class="card-title">Ландшафтный парк «Лога»</h3>
+                        <p class="card-desc">
+                            Живописные виды парка заслужили ему народное название — «маленькая Швейцария».
+                        </p>
+                        <div class="card-meta">
+                            <img src="./images/Icon_grey.svg" alt="icon"> Ночуем в «Княжьем»
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-block">
+                <h2 class="day-title">День 3</h2>
+
+                <div class="card">
+                    <div class="card-left">
+                        <div class="image-box6"></div>
+                        <p class="coords">Координаты: 49.6025624, 41.8922812</p>
+                    </div>
+                    <div class="card-right">
+                        <div class="timeline-line"></div>
+                        <div class="card-meta meta-top">
+                            <img src="./images/Icon_orange.svg" alt="icon"> Самое время заправиться!
+                        </div>
+                        <h3 class="card-title">Лебяжий крутояр</h3>
+                        <p class="card-desc">
+                            Именно здесь был сделан самый знаменитый фотопортрет Михаила Александровича Шолохова.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-left">
+                        <div class="image-box7"></div>
+                        <p class="coords">Координаты: 49.784256, 41.324129</p>
+                    </div>
+                    <div class="card-right">
+                        <div class="timeline-line"></div>
+                        <h3 class="card-title">Родник «Отрог»</h3>
+                        <p class="card-desc">
+                            Это прекрасное место, где можно испить чистейшей родниковой воды.
+                        </p>
+                        <div class="card-meta">
+                            <img src="./images/Icon_orange.svg" alt="icon"> Самое время заправиться!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-left">
+                        <div class="image-box8"></div>
+                        <p class="coords">Координаты: 49.6113068, 41.7099322</p>
+                    </div>
+                    <div class="card-right">
+                        <div class="timeline-line"></div>
+                        <h3 class="card-title">400-летний Вешенский дуб</h3>
+                        <p class="card-desc">
+                            Измерьте охват самого древнего дерева Ростовской области — «Дуба-Великана».
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-left">
+                        <div class="image-box9"></div>
+                        <p class="coords">Координаты: 49.8800121, 41.4184056</p>
+                    </div>
+                    <div class="card-right">
+                        <div class="timeline-line"></div>
+                        <h3 class="card-title">Песчаные Дюны</h3>
+                        <p class="card-desc">
+                            Мы направляемся в уникальное место — Быковские Большие Буруны.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__container">
+            <div class="footer__logo_hse"><img src="./images/logo.hs.svg"></div>
+            <div class="footer__contacts">
+                <div class="footer__logo_tg"><a href="https://t.me/motorhome_hse"><img src="./images/logo.tg.svg"></a></div>
+                <div class="footer__logo_vk"><a href="https://vk.com/club233608516"><img src="./images/logo.vk.svg"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

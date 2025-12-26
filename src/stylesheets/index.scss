@@ -1,0 +1,706 @@
+
+body {
+    margin: 0;
+    font-family: 'Fors Trial';
+    background-color: #ffffff;
+}
+.about_header {
+  min-height: 1024px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  font-family: 'Fors Trial Rg';
+  background-image: url(../images/about_bg_header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  align-items: center;
+}
+
+.about_header__container {
+  width: 1520px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  align-items: flex-start; 
+  text-align: left;
+}
+
+.about_header__text {
+  
+  margin-bottom: 300px;
+  max-width: 1050px; 
+  color: white;
+  font-family: 'Fors Trial Rg';
+  display: flex;
+    align-items: flex-end; 
+    gap: 30px;
+}
+
+
+
+
+
+.about_header__description {
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1.4;
+  color: white;
+  margin-bottom: 10px;
+  max-width: 390px;
+}
+
+/* --- МЕНЮ (одинаковое для всех страниц) --- */
+.about_header__menu {
+  background-image: url(../images/bg_menu.png);
+  max-width: 1520px;
+  height: 80px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Fors Trial Rg';
+  
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+
+  /* ИСПРАВЛЕНИЕ ОТСТУПОВ: */
+  /* Слева 60px. Справа 28px + 32px (отступ ссылки) = визуально 60px */
+  padding: 0 28px 0 60px; 
+  
+  margin: 0 auto;
+  position: fixed;
+  top: 53px;
+  width: 100%;
+  
+  /* ЦЕНТРИРОВАНИЕ ПЛАШКИ: */
+  left: 0;
+  right: 0;
+  
+  z-index: 1000;
+  font-weight: 300;
+  box-sizing: border-box; 
+}
+
+.about_header__nav a {
+  color: black;
+  text-decoration: none;
+  margin: 32px;
+  text-underline-offset: 4px;
+}
+
+.about_header__nav a:hover {
+  text-decoration: underline;
+}
+
+.about_page-wrapper {
+    background-color: #ffffff;
+    padding-bottom: 100px;
+    font-family: 'Fors Trial', sans-serif;
+    color: #252219;
+    margin-top: -5%;
+    border-radius: 50px;
+}
+
+.about_container {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.about_section-title {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'TT Neoris Trial';
+    margin-bottom: 70px;
+}
+
+.about_accent-title {
+    font-size: 72px;
+    font-weight: 700;
+    color: #B3431D; 
+    margin: 0;
+
+}
+
+.about_content-subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.about_content-desc {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 100;
+    color: #444;
+    max-width: 650px;
+    font-family: 'Fors Trial Rg';
+}
+
+/* --- Секция 1: О проекте --- */
+.about_section-about {
+    padding-top: 60px;
+    margin-bottom: 80px;
+}
+
+.about_aboutr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.about_about__left {
+    max-width: 60%;
+}
+
+.about_text {
+    font-size: 32px;
+    line-height: 1.4;
+    color: #666;
+    max-width: 904px;
+    font-family: 'Fors Trial Rg';
+    font-weight: 100;
+}
+
+.about_about__right {
+    text-align: left;
+    display: flex;
+    justify-content: end;
+}
+
+.about_slogan-title {
+    font-size: 70px;
+    line-height: 1.2;
+    color: #B3431D;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 140px;
+    font-family: 'TT Neoris Trial';
+}
+
+.about_hero-image {
+    width: 100%;
+    height: 500px;
+    background-color: #ddd;
+    background-image: url(../images/about-picture.png);
+     
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+/* --- Секция 2: Пины --- */
+.about_section-pins {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about_pins-title {
+
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    line-height: 1.3;
+}
+
+.about_pins-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about_pin-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 390px;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Fors Trial Rg';
+}
+
+.about_pin-center {
+    margin-top: 50px; 
+}
+
+.about_pin-item img {
+    width: 70px;
+    height: auto;
+}
+
+/* --- Строки контента --- */
+.about_content-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    border-top: 5px solid #B3431D;
+    
+}
+
+.about_no-border {
+    border-bottom: none;
+}
+
+
+
+.about_content-row__right {
+    width: 50%;
+}
+
+.about_values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* --- Секция 6: Сетка (Grid) --- */
+.about_section-grid {
+    margin-top: 40px;
+}
+
+.about_grid-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+.about_tab-btn {
+    width: 100%;  
+    height: 145px; 
+    background-color: #B3431D;
+    color: white;
+    border-radius: 30px;
+    position: relative;
+    display: flex; 
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 25px; 
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #B3431D;
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 32px;
+    position: relative;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: flex-start; 
+    padding: 15px 20px; 
+    box-sizing: border-box;
+}
+
+.about_tab-btn span {
+    position: absolute;
+    top: 20px;  
+    right: 30px; 
+}
+
+
+.about_bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-rows: 250px; 
+    gap: 20px;
+}
+
+.about_grid-card {
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+
+
+.about_card-label {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+
+}
+.about_card-regions {
+    background-color: #A64E2E; 
+    background-image: none;
+    position: relative;
+   
+}
+
+.about_card-regions .card-arrow {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 24px;
+}
+
+.about_card-regions .card-arrow img {
+    width: 100%;
+    display: block;
+}
+
+.about_card-karelia {
+    grid-column: span 1;
+    grid-row: span 2;
+   background-image: url('../images/karelia.png');
+}
+
+.about_card-altai {
+    grid-column: span 2;
+   background-image: url('../images/altai.png');
+}
+
+.about_card-rostov {
+    grid-column: span 2;
+    background-image: url('../images/rostov.png');
+}
+
+.about_card-regions {
+    grid-column: span 1;
+    background-color: #B3431D;
+    background-image: none;
+}
+
+.about_card-dagestan {
+    grid-column: span 2;
+    background-image: url('../images/dagestan.png');
+}
+
+.about_card-kamchatka { background-image: url('../images/kamchatka.png'); }
+.about_card-tula { background-image: url('../images/tula.png'); }
+.about_card-siberia { background-image: url('../images/siberia.png'); }
+
+.about_footer {
+  display: flex;
+  background-color: #B3431D;
+  min-height: 280px; 
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.about_footer__container {
+  width: 100%;
+  max-width: 1520px; 
+  padding: 0 40px;   
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.about_footer__logo_hse img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about_footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'TT Fors Trial', sans-serif;
+  color: white; 
+  align-items: center;
+  gap: 20px; 
+}
+
+.about_footer__contacts a {
+  display: block;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .about_header { min-height: 700px; }
+    
+    .about_header__menu { 
+        width: 90%; /* Меню чуть уже */
+        padding: 0 30px;
+    }
+
+    .about_header__img img 
+    { max-width: 450px; }
+    .about_header__description p 
+    { font-size: 24px; }
+
+    /* Шрифты поменьше */
+    .about_section-title, .about_accent-title { font-size: 56px; }
+    .about_slogan-title { font-size: 48px; }
+    .about_content-subtitle { font-size: 32px; }
+    .about_content-desc, .about_text { font-size: 20px; }
+
+    /* Табы и сетка */
+    .about_tab-btn { font-size: 24px; height: 120px; }
+    .about_card-label { font-size: 22px; }
+}
+
+
+/* --- МОБИЛЬНАЯ ВЕРСИЯ (до 992px) --- */
+@media screen and (max-width: 992px) {
+
+   
+    .about_grid-tabs {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px; /* Меньший отступ */
+        margin-bottom: 15px;
+    }
+
+    .about_tab-btn {
+        height: 100px; /* Уменьшаем высоту */
+        padding: 20px;
+        font-size: 20px; /* Уменьшаем шрифт */
+        border-radius: 20px;
+    }
+    
+    .about_tab-btn span {
+        top: 15px;
+        right: 15px;
+        width: 18px;
+    }
+
+    /* Самое важное: ПЕРВАЯ кнопка ("Статьи") растягивается на 2 колонки */
+    .about_tab-btn:nth-child(1) {
+        grid-column: span 2;
+    }
+    /* "Маршруты" и "Тесты" (2-й и 3-й) автоматически встанут по 1 колонке ниже */
+
+
+    /* === 2. BENTO GRID (КАРТОЧКИ) === */
+    .about_bento-grid {
+        display: grid;
+        /* Тоже сетка из ДВУХ колонок */
+        grid-template-columns: 1fr 1fr; 
+        grid-auto-rows: 160px; /* Высота маленькой карточки */
+        gap: 10px;
+    }
+
+    .about_grid-card {
+        padding: 15px; /* Меньше отступы внутри */
+        border-radius: 20px;
+    }
+    
+    .about_card-label {
+        font-size: 18px; /* Шрифт меньше */
+        line-height: 1.2;
+    }
+
+    .about_card-karelia {
+        grid-column: span 2; 
+        grid-row: span 1; 
+    }
+
+    .about_card-altai, 
+    .about_card-rostov {
+        grid-column: span 1;
+    }
+
+    .about_card-regions, 
+    .about_card-dagestan {
+        grid-column: span 1;
+    }
+
+    
+    .about_card-kamchatka, 
+    .about_card-tula {
+        grid-column: span 1;
+    }
+
+    .about_card-siberia {
+        grid-column: span 2;
+    }
+    
+    .about_card-regions .card-arrow {
+        top: 15px;
+        right: 15px;
+        width: 18px;
+    }
+    .about_header {
+        background-image: url(../images/bg__mobile_about.png); 
+        min-height: 100vh;
+        align-items: center;
+        padding-top: 60px;
+     
+    }
+    .about_header__text {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .about_header__description {
+        font-size: 16px;
+        max-width: 250px;
+    }
+    .about_header__menu { 
+        display: none; } 
+
+    .mobile-nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        padding: 0 24px;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+   
+    .mobile-logo img { 
+        width: 50px; }
+
+    .mobile-burger {
+        width: 50px; 
+        height: 50px;
+        background: white; 
+        border-radius: 50%; 
+        border: none;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        font-family: 'Fors Trial Rg';
+    }
+    .burger-lines { 
+        width: 20px; 
+        height: 14px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; }
+
+    .burger-lines span { 
+        display: block; 
+        width: 100%; 
+        height: 2px; 
+        background: black; }
+    
+
+    .simple-dropdown {
+        display: none; 
+        position: absolute; 
+        top: 60px; 
+        right: 0;
+        background: white; 
+        padding: 10px; 
+        border-radius: 10px; 
+        flex-direction: column;
+    }
+    .simple-dropdown.show { display: flex; }
+    .simple-dropdown a { 
+        padding: 10px; 
+        text-decoration: none; 
+        color: black; }
+
+
+    .about_header__img img { 
+        max-width: 300px; }
+
+    .about_header__description p { 
+        font-size: 18px; 
+        text-align: left; }
+
+    .about_page-wrapper {
+        margin-top: -15%; 
+        border-radius: 30px 30px 0 0; }
+
+    .about_aboutr { 
+        flex-direction: column; 
+        gap: 30px; }
+
+    .about_about__left { 
+        max-width: 100%; 
+        text-align: left; 
+        justify-content: flex-start; }
+
+    .about_about__right { 
+        max-width: 100%; 
+        text-align: left; 
+        justify-content: center; }
+
+    .about_section-title, .about_accent-title { 
+        font-size: 40px; 
+        margin-bottom: 20px; 
+        text-align: left;}
+
+    .about_slogan-title { 
+        font-size: 32px; 
+        padding-top: 0; }
+        .about_slogan-title img { 
+        height: 30px; 
+        width:30px ;
+        padding-top: 0; }
+    
+    .about_hero-image { 
+        height: 300px; }
+
+    .about_pin-item { 
+        width: 100%; 
+        font-size: 20px; }
+    .about_pin-center { 
+        margin-top: 0; }
+    .about_pins-title { 
+        font-size: 24px; }
+
+   
+    .about_content-row { 
+        flex-direction: column; 
+        gap: 20px; 
+        padding: 40px 0; }
+
+    .about_content-row__left, .about_content-row__right { 
+        width: 100%; }
+    
+    .about_content-subtitle { 
+        font-size: 24px; }
+    .about_content-desc, .about_text { 
+        font-size: 16px; }
+
+
+    .article_footer__container { 
+        flex-direction: column; 
+        gap: 30px; }
+
+     .about_footer__logo_hse { max-width: 200px; }
+     .about_footer { 
+        height: auto; 
+        padding: 40px 0; 
+        margin-top: -30px; }
+  .about_footer__container { 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 30px; }
+
+  .about_footer__logo_hse { 
+    margin-bottom: 10px; }
+
+  .about_footer__contacts { 
+    justify-content: center; width: 100%; }
+ 
+}
