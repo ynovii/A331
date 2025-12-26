@@ -49,7 +49,7 @@ body {
   max-width: 390px;
 }
 
-/* --- МЕНЮ (одинаковое для всех страниц) --- */
+
 .about_header__menu {
   background-image: url(../images/bg_menu.png);
   max-width: 1520px;
@@ -63,14 +63,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* ИСПРАВЛЕНИЕ ОТСТУПОВ: */
-  /* Слева 60px. Справа 28px + 32px (отступ ссылки) = визуально 60px */
+
   padding: 0 28px 0 60px;
   margin: 0 auto;
   position: fixed;
   top: 53px;
   width: 100%;
-  /* ЦЕНТРИРОВАНИЕ ПЛАШКИ: */
+
   left: 0;
   right: 0;
   z-index: 1000;
@@ -425,7 +424,7 @@ body {
     min-height: 700px;
   }
   .about_header__menu {
-    width: 90%; /* Меню чуть уже */
+    width: 90%;
     padding: 0 30px;
   }
   .about_header__img img {
@@ -458,13 +457,13 @@ body {
   .about_grid-tabs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px; /* Меньший отступ */
+    gap: 10px; 
     margin-bottom: 15px;
   }
   .about_tab-btn {
-    height: 100px; /* Уменьшаем высоту */
+    height: 100px; 
     padding: 20px;
-    font-size: 20px; /* Уменьшаем шрифт */
+    font-size: 20px; 
     border-radius: 20px;
   }
   .about_tab-btn span {
@@ -472,25 +471,24 @@ body {
     right: 15px;
     width: 18px;
   }
-  /* Самое важное: ПЕРВАЯ кнопка ("Статьи") растягивается на 2 колонки */
+ 
   .about_tab-btn:nth-child(1) {
     grid-column: span 2;
   }
-  /* "Маршруты" и "Тесты" (2-й и 3-й) автоматически встанут по 1 колонке ниже */
-  /* === 2. BENTO GRID (КАРТОЧКИ) === */
+  
   .about_bento-grid {
     display: grid;
-    /* Тоже сетка из ДВУХ колонок */
+   
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 160px; /* Высота маленькой карточки */
+    grid-auto-rows: 160px; 
     gap: 10px;
   }
   .about_grid-card {
-    padding: 15px; /* Меньше отступы внутри */
+    padding: 15px; 
     border-radius: 20px;
   }
   .about_card-label {
-    font-size: 18px; /* Шрифт меньше */
+    font-size: 18px; 
     line-height: 1.2;
   }
   .about_card-karelia {
