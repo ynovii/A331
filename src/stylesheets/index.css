@@ -105,6 +105,7 @@ body {
 }
 
 .about_section-title {
+  color: #252219;
   font-size: 72px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -120,14 +121,15 @@ body {
 }
 
 .about_content-subtitle {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 0;
+  color: #252219;
 }
 
 .about_content-desc {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1.5;
   font-weight: 100;
   color: #444;
@@ -135,7 +137,6 @@ body {
   font-family: "Fors Trial Rg";
 }
 
-/* --- Секция 1: О проекте --- */
 .about_section-about {
   padding-top: 60px;
   margin-bottom: 80px;
@@ -186,13 +187,13 @@ body {
   border-radius: 30px;
 }
 
-/* --- Секция 2: Пины --- */
 .about_section-pins {
   text-align: center;
   margin-bottom: 100px;
 }
 
 .about_pins-title {
+  color: #252219;
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 60px;
@@ -226,7 +227,6 @@ body {
   height: auto;
 }
 
-/* --- Строки контента --- */
 .about_content-row {
   display: flex;
   justify-content: space-between;
@@ -248,7 +248,6 @@ body {
   gap: 40px;
 }
 
-/* --- Секция 6: Сетка (Grid) --- */
 .about_section-grid {
   margin-top: 40px;
 }
@@ -435,7 +434,6 @@ body {
   .about_header__description p {
     font-size: 24px;
   }
-  /* Шрифты поменьше */
   .about_section-title, .about_accent-title {
     font-size: 56px;
   }
@@ -448,7 +446,6 @@ body {
   .about_content-desc, .about_text {
     font-size: 20px;
   }
-  /* Табы и сетка */
   .about_tab-btn {
     font-size: 24px;
     height: 120px;
@@ -457,7 +454,6 @@ body {
     font-size: 22px;
   }
 }
-/* --- МОБИЛЬНАЯ ВЕРСИЯ (до 992px) --- */
 @media screen and (max-width: 992px) {
   .about_grid-tabs {
     display: grid;
